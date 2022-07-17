@@ -32,7 +32,7 @@ const calculateBill = () => {
     let tipPercentage = Number(tipInput.value) / 100
     let calculatedTip = tipPercentage * billInputValue
     let sharedBetween = Number(numberOfPeople.innerText)
-    let calculatedBill = Math.ceil((billInputValue + calculatedTip) / sharedBetween)
+    let calculatedBill = ((billInputValue + calculatedTip) / sharedBetween).toFixed(2)
     totalDisplayed.innerText = `$${calculatedBill}`
 }
 
