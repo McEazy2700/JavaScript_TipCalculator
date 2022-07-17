@@ -50,6 +50,6 @@ const decreasePeople = () => {
         numberOfPeople.innerText = sharedBetween -= 1
         calculateBill()
     }else {
-        throw ('Number cannot be less than 1')
+        throw ('Yo! You cannot have less than 1 person')
     }
 }
